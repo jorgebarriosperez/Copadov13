@@ -40,6 +40,51 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <businessProcesses>
+        <fullName>Sales Process TE</fullName>
+        <description>Sales Process TE</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Id%2E Decision Makers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation%2FReview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perception Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal%2FPrice Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Proposition</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
@@ -341,32 +386,6 @@
         </filters>
         <label>Won</label>
     </listViews>
-    <recordTypes>
-        <fullName>OPP_SELECCIONRT</fullName>
-        <active>true</active>
-        <businessProcess>Sales Process TE</businessProcess>
-        <description>PRUEBA DE CREACION</description>
-        <label>OPP_SELECCIONRT</label>
-        <picklistValues>
-            <picklist>SeleccionRT__c</picklist>
-            <values>
-                <fullName>CLOSED</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ESCALATE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IN PROGRESS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OPEN</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
