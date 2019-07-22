@@ -386,32 +386,6 @@
         </filters>
         <label>Won</label>
     </listViews>
-    <recordTypes>
-        <fullName>OPP_SELECCIONRT</fullName>
-        <active>true</active>
-        <businessProcess>Sales Process TE</businessProcess>
-        <description>PRUEBA DE CREACION</description>
-        <label>OPP_SELECCIONRT</label>
-        <picklistValues>
-            <picklist>SeleccionRT__c</picklist>
-            <values>
-                <fullName>CLOSED</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ESCALATE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IN PROGRESS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OPEN</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
