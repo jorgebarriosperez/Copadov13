@@ -184,6 +184,41 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>SeleccionRT__c</fullName>
+        <externalId>false</externalId>
+        <label>SeleccionRT</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OPEN</fullName>
+                    <default>false</default>
+                    <label>OPEN</label>
+                </value>
+                <value>
+                    <fullName>IN PROGRESS</fullName>
+                    <default>false</default>
+                    <label>IN PROGRESS</label>
+                </value>
+                <value>
+                    <fullName>ESCALATE</fullName>
+                    <default>false</default>
+                    <label>ESCALATE</label>
+                </value>
+                <value>
+                    <fullName>CLOSED</fullName>
+                    <default>false</default>
+                    <label>CLOSED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>StageName</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -306,6 +341,32 @@
         </filters>
         <label>Won</label>
     </listViews>
+    <recordTypes>
+        <fullName>OPP_SELECCIONRT</fullName>
+        <active>true</active>
+        <businessProcess>Sales Process TE</businessProcess>
+        <description>PRUEBA DE CREACION</description>
+        <label>OPP_SELECCIONRT</label>
+        <picklistValues>
+            <picklist>SeleccionRT__c</picklist>
+            <values>
+                <fullName>CLOSED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESCALATE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN PROGRESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPEN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
