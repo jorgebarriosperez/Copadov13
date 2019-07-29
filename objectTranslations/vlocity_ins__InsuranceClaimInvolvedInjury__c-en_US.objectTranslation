@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Involved Injuries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claimant Id --></label>
+        <name>vlocity_ins__ClaimantId__c</name>
+        <relationshipLabel><!-- Involved Injuries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Party --></label>
+        <name>vlocity_ins__ClaimantParty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Involved Injuries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>vlocity_ins__Severity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__SpecProduct2Id__c</name>
+        <relationshipLabel><!-- Involved Injuries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treated By --></label>
+        <name>vlocity_ins__TreatedBy__c</name>
+    </fields>
+</CustomObjectTranslation>
