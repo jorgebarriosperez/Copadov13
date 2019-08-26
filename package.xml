@@ -3,6 +3,7 @@
     <types>
         <members>AccountOperations</members>
         <members>AppleWatch</members>
+        <members>agf__ADM_AcceptanceCriterionCloner</members>
         <name>ApexClass</name>
     </types>
     <version>46.0</version>
