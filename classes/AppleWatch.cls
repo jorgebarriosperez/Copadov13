@@ -7,8 +7,10 @@ Public with sharing Class AppleWatch{
         t.Priority    = 'High';
         t.WhatId      = opp.Id;
         insert t;
+        //Antes de
         //Comentarios que pasara???
-        //Prueba del User3
+        //Despues de 
+        //Prueba del User4 el destructor
      }
   }
  }
