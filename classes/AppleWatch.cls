@@ -10,7 +10,7 @@ Public with sharing Class AppleWatch{
         //Antes de
         //Comentarios que pasara???
         //Despues de 
-        //Prueba del User4 el destructor1
+        //Prueba del User4 el destructor
      }
   }
  }
