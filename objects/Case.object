@@ -322,6 +322,18 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>case_text2__c</fullName>
+        <externalId>false</externalId>
+        <label>case_text2</label>
+        <length>13</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>case_text3__c</fullName>
         <externalId>false</externalId>
         <label>case_text3</label>
