@@ -129,6 +129,20 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Hotfix_text__c</fullName>
+        <description>test</description>
+        <externalId>false</externalId>
+        <inlineHelpText>super help</inlineHelpText>
+        <label>Hotfix_text</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsClosedOnCreate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
