@@ -3,11 +3,10 @@ Public with sharing Class AppleWatch2{
     for (Opportunity opp : lopt) {
         Task t        = new Task();
         t.Subject     = 'Apple Watch Promo';
-        t.Description = 'Send them one ASAP';
+        t.Description = 'Send them one ASAP ========>';
         t.Priority    = 'High';
         t.WhatId      = opp.Id;
-        //TEST AHORAAAAAAAAAAAA  123
-        //Conflicto en aki
+        //TEST AHORAAAAAAAAAAAA
         insert t;
         //TEST EN DEV1 
              }
