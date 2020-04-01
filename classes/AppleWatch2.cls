@@ -1,4 +1,4 @@
-Public with sharing Class AppleWatch{
+Public with sharing Class AppleWatch2{
  Public Static void appleWatchmethod(list<Opportunity> lopt ){
     for (Opportunity opp : lopt) {
         Task t        = new Task();
@@ -6,9 +6,9 @@ Public with sharing Class AppleWatch{
         t.Description = 'Send them one ASAP ========>';
         t.Priority    = 'High';
         t.WhatId      = opp.Id;
-        //TEST EN MUERTEEE DEV22222
+        //TEST AHORAAAAAAAAAAAA
         insert t;
-        //TEST EN MUERTEEE DEV1
+        //TEST EN DEV1 
              }
   }
  }
