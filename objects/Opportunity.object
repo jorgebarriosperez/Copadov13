@@ -162,6 +162,17 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>EL_TRACTOR__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>DESCRIPCION</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MUERTE</inlineHelpText>
+        <label>EL_TRACTOR</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>ExpectedRevenue</fullName>
         <trackTrending>false</trackTrending>
     </fields>
