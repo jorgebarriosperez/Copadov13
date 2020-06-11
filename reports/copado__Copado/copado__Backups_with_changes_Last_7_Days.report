@@ -15,10 +15,12 @@
     <filter>
         <criteriaItems>
             <column>copado__Git_Org_Commit__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>No changes</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

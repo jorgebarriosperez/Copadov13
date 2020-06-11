@@ -45,16 +45,19 @@
     <filter>
         <criteriaItems>
             <column>copado__User_Story__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancelled</value>
         </criteriaItems>
         <criteriaItems>
             <column>copado__User_Story__c.copado__Stop_Indexing_Metadata__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
