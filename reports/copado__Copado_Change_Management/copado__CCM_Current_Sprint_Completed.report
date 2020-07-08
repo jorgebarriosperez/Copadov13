@@ -48,16 +48,19 @@
     <filter>
         <criteriaItems>
             <column>FK_$copado__Sprint__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>In progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>copado__User_Story__c.copado__Progress__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>100</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
