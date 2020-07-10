@@ -2,7 +2,7 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
         <label><!-- ViewDeploymentColumns --></label>
-        <name>ViewDeploymentColumns</name>
+        <name>copado__ViewDeploymentColumns</name>
     </fieldSets>
     <fields>
         <label><!-- Attachment Id --></label>
@@ -63,6 +63,10 @@ WARNING: Credits consumption will apply as a regular deployment since resource-w
     <fields>
         <label><!-- Org Count --></label>
         <name>copado__Org_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Read Only --></label>
+        <name>copado__Read_Only__c</name>
     </fields>
     <fields>
         <label><!-- Run all tests --></label>
