@@ -5,7 +5,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -13,7 +33,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -21,7 +61,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -29,7 +89,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -37,7 +117,27 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -118,16 +218,16 @@
         <formula>IMAGE( 
 CASE(TEXT(copado__Last_Status__c), 
 
-&apos;Completed with errors&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c)) &amp; &apos;Statics/img/icons/warning16.png&apos;, 
+&apos;Completed with errors&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;) &amp; &apos;Statics/img/icons/warning16.png&apos;,
 
-&apos;Completed successfully&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c)) &amp; &apos;Statics/img/icons/confirm16.png&apos;, 
+&apos;Completed successfully&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;) &amp; &apos;Statics/img/icons/confirm16.png&apos;,
 
-&apos;Completed with warnings&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c)) &amp; &apos;Statics/img/icons/confirm16.png&apos;, 
+&apos;Completed with warnings&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;) &amp; &apos;Statics/img/icons/confirm16.png&apos;,
 
 
-&apos;In Progress&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c)) &amp; &apos;Statics/img/icons/loading.gif&apos;,
+&apos;In Progress&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;) &amp; &apos;Statics/img/icons/loading.gif&apos;,
 
-&apos;Queued&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c)) &amp; &apos;Statics/img/icons/loading.gif&apos;, 
+&apos;Queued&apos;, &apos;/resource/&apos; &amp; IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;) &amp; &apos;Statics/img/icons/loading.gif&apos;,
 
 &apos;/s.gif&apos;),
 
@@ -376,7 +476,7 @@ TEXT(copado__Last_Status__c)
         <masterLabel>Run Test</masterLabel>
         <openType>sidebar</openType>
         <protected>false</protected>
-        <url>/apex/{!IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c))}SeleniumTestQuickRun?runId={!copado__Selenium_Test_Run__c.Id}</url>
+        <url>/apex/{!IF(CONTAINS($Action.copado__User_Story__c.New, &apos;copado__&apos;), &apos;copado__&apos;, &apos;&apos;)}SeleniumTestQuickRun?runId={!copado__Selenium_Test_Run__c.Id}</url>
     </webLinks>
     <webLinks>
         <fullName>copado__Refresh_Results</fullName>

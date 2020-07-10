@@ -2,6 +2,7 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>copado__Commit_Files</customButtons>
     <customButtons>copado__Perform_Validation</customButtons>
+    <customButtons>copado__Ready_for_Promotion</customButtons>
     <customButtons>copado__Add_Metadata</customButtons>
     <customButtons>copado__Apex_Test</customButtons>
     <customButtons>copado__Run_Static_Code_Analysis</customButtons>
@@ -391,6 +392,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>copado__Run_Compliance_Scan</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -429,11 +435,6 @@
             <actionName>copado__Manage_Selenium_Tests</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>7</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>copado__Run_Compliance_Scan</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>8</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>copado__Pull_Request</actionName>
@@ -546,7 +547,6 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Promotion__c.NAME</fields>
         <fields>copado__Promotion__c.copado__Project__c</fields>
@@ -696,7 +696,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0Y000000UiJj</masterLabel>
+        <masterLabel>00h2p00000jELe9</masterLabel>
         <sizeX>3</sizeX>
         <sizeY>1</sizeY>
         <summaryLayoutItems>
