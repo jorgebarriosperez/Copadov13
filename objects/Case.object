@@ -269,6 +269,69 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Gradiente__c</fullName>
+        <externalId>false</externalId>
+        <label>Gradiente</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>jorge_picklist1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Old</fullName>
+                    <default>false</default>
+                    <label>Old</label>
+                </value>
+                <value>
+                    <fullName>Evaluate</fullName>
+                    <default>false</default>
+                    <label>Evaluate</label>
+                </value>
+                <value>
+                    <fullName>Ansiety</fullName>
+                    <default>false</default>
+                    <label>Ansiety</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Maybe</fullName>
+                    <default>false</default>
+                    <label>Maybe</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>texto1</controllingFieldValue>
+                <valueName>Old</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>texto1</controllingFieldValue>
+                <controllingFieldValue>texto2</controllingFieldValue>
+                <valueName>Evaluate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>texto2</controllingFieldValue>
+                <valueName>Ansiety</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>texto2</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>texto3</controllingFieldValue>
+                <valueName>Maybe</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Hotfix_text__c</fullName>
         <description>test</description>
         <externalId>false</externalId>
