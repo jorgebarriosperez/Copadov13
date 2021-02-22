@@ -88,4 +88,16 @@
         <name>copado__Copado_Selenium_Testing</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>standard__SalesforceCMS</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Service_Cloud_Console</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>copado__Copado_Console</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

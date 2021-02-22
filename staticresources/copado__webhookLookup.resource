@@ -104,7 +104,8 @@ webhookLookup.applyMultiReferal = function(){
         for(var i = 0; i < webhookLookup.multiReferals.length; i++){
             templateUrl = templateUrl.replace('__RECORDID_'+i+'__', webhookLookup.referalMap[webhookLookup.multiReferals[i].toLowerCase().trim()]);
         }
-        url += templateUrl.replace('api_key=__APIKEY__', '');
+        //removed & after api key for multi referral
+        url += templateUrl.replace('api_key=__APIKEY__&', '');
         webhookLookup.setValue(url);
         webhookLookup.onSuccessCB();
         webhookLookup.hide(true);
@@ -162,7 +163,22 @@ webhookLookup.setUrl = function(templateUrl, recordId, skipValueSet){
 	if(webhookLookup.config.ADD_API_KEY_TO_URL==true){
 		JsRemoting.apiKey.createKey(ns,
 	        function(result){
-	            var url = webhookLookup.config.herokuServer+templateUrl.replace('__RECORDID__', recordId).replace('__APIKEY__', result);
+	            var url = webhookLookup.config.herokuServer;
+                if(webhookLookup.multiReferals) {
+                    for(var i = 0; i < webhookLookup.multiReferals.length; i++){
+                        templateUrl = templateUrl.replace('__RECORDID_'+i+'__', webhookLookup.referalMap[webhookLookup.multiReferals[i].toLowerCase().trim()]);
+                    }
+                } else {
+                    templateUrl = templateUrl.replace('__RECORDID__', recordId);
+                }
+                url += templateUrl.replace('__APIKEY__', result);
+                if(url.substring(url.length-1) == '?') {
+                    url = url.replace('?','');
+                }
+                url = url.replace('?&','?');
+	            if(url.indexOf('&') > -1 && url.indexOf('?') == -1){
+                    url = url.replace('&','?');
+                }
 	            if(!skipValueSet) webhookLookup.setValue(url);
 	            webhookLookup.onSuccessCB();
 	            webhookLookup.hide();
@@ -176,7 +192,22 @@ webhookLookup.setUrl = function(templateUrl, recordId, skipValueSet){
 	    );
 	}
 	else{
-		var url = webhookLookup.config.herokuServer+templateUrl.replace('__RECORDID__', recordId).replace('?api_key=__APIKEY__', '');
+		var url = webhookLookup.config.herokuServer;
+		if(webhookLookup.multiReferals) {
+            for(var i = 0; i < webhookLookup.multiReferals.length; i++){
+                templateUrl = templateUrl.replace('__RECORDID_'+i+'__', webhookLookup.referalMap[webhookLookup.multiReferals[i].toLowerCase().trim()]);
+            }
+        } else {
+            templateUrl = templateUrl.replace('__RECORDID__', recordId);
+        }
+        url += templateUrl.replace('api_key=__APIKEY__', '');
+        if(url.substring(url.length-1) == '?') {
+            url = url.replace('?','');
+        }
+        url = url.replace('?&','?');
+		if(url.indexOf('&') > -1 && url.indexOf('?') == -1){
+            url = url.replace('&','?');
+        }
 		webhookLookup.setValue(url);
 		webhookLookup.onSuccessCB();
         webhookLookup.hide();
