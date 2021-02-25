@@ -8,6 +8,7 @@
         <members>Address</members>
         <members>Analytics</members>
         <members>Apex</members>
+        <members>AppAnalytics</members>
         <members>AppExperience</members>
         <members>Archive</members>
         <members>Blockchain</members>
@@ -22,6 +23,7 @@
         <members>ConnectedApp</members>
         <members>Content</members>
         <members>Contract</members>
+        <members>ConversationalIntelligence</members>
         <members>Currency</members>
         <members>CustomerDataPlatform</members>
         <members>DataDotCom</members>
@@ -33,6 +35,7 @@
         <members>EmailAdministration</members>
         <members>EmailIntegration</members>
         <members>EmailTemplate</members>
+        <members>EmployeeUser</members>
         <members>EncryptionKey</members>
         <members>EnhancedNotes</members>
         <members>Entitlement</members>
@@ -78,14 +81,18 @@
         <members>Product</members>
         <members>QuickText</members>
         <members>Quote</members>
+        <members>RecommendationBuilder</members>
         <members>RecordPage</members>
         <members>RetailExecution</members>
         <members>Schema</members>
         <members>Search</members>
         <members>Security</members>
+        <members>ServiceCloudVoice</members>
+        <members>ServiceSetupAssistant</members>
         <members>Sharing</members>
         <members>Site</members>
         <members>SocialProfile</members>
+        <members>SourceTracking</members>
         <members>Survey</members>
         <members>SystemNotification</members>
         <members>Territory2</members>
@@ -99,5 +106,5 @@
         <members>WorkDotCom</members>
         <name>Settings</name>
     </types>
-    <version>48.0</version>
+    <version>50.0</version>
 </Package>

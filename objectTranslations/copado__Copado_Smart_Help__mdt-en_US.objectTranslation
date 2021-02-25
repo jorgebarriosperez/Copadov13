@@ -40,5 +40,5 @@
         <label><!-- Triggering Value --></label>
         <name>copado__Triggering_Value__c</name>
     </fields>
-    <startsWith><!-- Consonant --></startsWith>
+    
 </CustomObjectTranslation>

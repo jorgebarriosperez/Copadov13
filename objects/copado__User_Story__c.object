@@ -5076,6 +5076,21 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>copado__Feature__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Feature</label>
+        <referenceTo>copado__Copado_Feature__c</referenceTo>
+        <relationshipLabel>User Stories</relationshipLabel>
+        <relationshipName>User_Stories</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>copado__Functional_Specifications__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -5150,23 +5165,23 @@
     <fields>
         <fullName>copado__Last_Validation_Deployment_Status__c</fullName>
         <deprecated>false</deprecated>
-        <description>Status of the latest validation Deployment for the User Story.</description>
+        <description>Status of the latest validation Promotion for the User Story.</description>
         <externalId>false</externalId>
         <formula>IF(copado__Last_Validation_Deployment__r.copado__Date__c &lt; copado__Latest_Commit_Date__c,
-			 IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quot;+&quot;Validation Outdated&quot;, 
-				IF(AND(NOT(ISBLANK(copado__Last_Validation_Deployment__c)),
-											CONTAINS(TEXT(copado__Last_Validation_Deployment__r.copado__Status__c),&apos;Error&apos;)),
-							IMAGE(&quot;/img/samples/flag_red.gif&quot;,&quot;failed&quot;)+&quot; &quot;+TEXT(copado__Last_Validation_Deployment__r.copado__Status__c),
-							IF(AND(NOT(ISBLANK(copado__Last_Validation_Deployment__c)),
-											CONTAINS(TEXT(copado__Last_Validation_Deployment__r.copado__Status__c),&apos;Successfully&apos;)),
-										IMAGE(&quot;/img/samples/flag_green.gif&quot;,&quot;completed&quot;)+&quot; &quot;+TEXT(copado__Last_Validation_Deployment__r.copado__Status__c),
-										TEXT(copado__Last_Validation_Deployment__r.copado__Status__c)
-									)
-		    )
-			)</formula>
+IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quot;+&quot;Validation Outdated&quot;, 
+   IF(AND(NOT(ISBLANK(copado__Last_Validation_Promotion__c)),
+                               (CONTAINS(TEXT(copado__Last_Validation_Promotion__r.copado__Status__c),&apos;error&apos;)) || ISPICKVAL(copado__Last_Validation_Promotion__r.copado__Status__c, &apos;Validation failed&apos;)),
+               IMAGE(&quot;/img/samples/flag_red.gif&quot;,&quot;failed&quot;)+&quot; &quot;+TEXT(copado__Last_Validation_Promotion__r.copado__Status__c),
+               IF(AND(NOT(ISBLANK(copado__Last_Validation_Promotion__c)),
+                               (CONTAINS(TEXT(copado__Last_Validation_Promotion__r.copado__Status__c),&apos;Successfully&apos;)) || ISPICKVAL(copado__Last_Validation_Promotion__r.copado__Status__c, &apos;Validated&apos;)),
+                           IMAGE(&quot;/img/samples/flag_green.gif&quot;,&quot;completed&quot;)+&quot; &quot;+TEXT(copado__Last_Validation_Promotion__r.copado__Status__c),
+                           TEXT(copado__Last_Validation_Promotion__r.copado__Status__c)
+                       )
+)
+)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>Status of the latest validation Deployment for the User Story.</inlineHelpText>
-        <label>Last Validation Deployment Status</label>
+        <label>Last Validation Status</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -5999,7 +6014,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Story_Points_Other__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Story Points Other</label>
+        <label>Planned Points</label>
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
@@ -6012,7 +6027,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Story_Points_SFDC__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Story Points SFDC</label>
+        <label>Actual Points</label>
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
@@ -6107,6 +6122,20 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__US_Feature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Feature</label>
+        <referenceTo>copado__Application_Feature__c</referenceTo>
+        <relationshipLabel>User Stories</relationshipLabel>
+        <relationshipName>User_Stories</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__User_Story_Title__c</fullName>
