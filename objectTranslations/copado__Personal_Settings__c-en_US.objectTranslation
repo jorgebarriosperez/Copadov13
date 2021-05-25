@@ -30,5 +30,10 @@
         <label><!-- DeployConnectionBox width --></label>
         <name>copado__DeployConnectionBox_width__c</name>
     </fields>
-    <startsWith><!-- Consonant --></startsWith>
+    <fields>
+        <help><!-- Disables Auto-Resolve from Online Conflict Resolution --></help>
+        <label><!-- Disable Auto-Resolve --></label>
+        <name>copado__Disable_Auto_Resolve__c</name>
+    </fields>
+    
 </CustomObjectTranslation>
