@@ -120,7 +120,7 @@
     <fields>
         <fullName>EL_TRACTOR__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>DESCRIPCION DIEGO</description>
+        <description>DESCRIPCION</description>
         <externalId>false</externalId>
         <inlineHelpText>MUERTE</inlineHelpText>
         <label>EL_TRACTOR</label>
